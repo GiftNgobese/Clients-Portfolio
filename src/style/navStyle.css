@@ -1,0 +1,47 @@
+/* styles.css */
+
+.navbar {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  /* height: 160px; */
+  min-height: 160px;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-left {
+  /* Add styles for left-aligned content if needed */
+  color: black;
+}
+
+.navbar-right {
+  display: flex;
+}
+
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-item {
+  margin-right: 15px;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Adjust the maximum height of the collapsed navbar */
+@media (max-width: 767.98px) {
+  .navbar-collapse {
+      max-height: none; /* Set it to 'none' or adjust as needed */
+  }
+}

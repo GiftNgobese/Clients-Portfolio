@@ -1,0 +1,173 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body, html {
+    height: 100%;
+  }
+  
+  /* Image Div Styles */
+  .stan-image {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Set the height to 100% of the viewport height */
+    overflow: hidden; /* Ensure the image does not overflow */
+    height: 600px;
+  }
+  
+  .background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the entire container */
+    display: block;
+  }
+  
+  .overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+  }
+  
+  /* --------- END --------- */
+  
+
+
+
+  /* ------------SKILL IMAGE TRANSITION STYLE -------------------  */
+
+/* Global.css or your custom CSS file */
+
+.skills-container {
+    overflow: hidden;
+  }
+  
+  .slide-container {
+    display: flex;
+    animation: slide 30s linear infinite; /* Adjust the duration as needed */
+  }
+  
+  @keyframes slide {
+    0% {
+      transform: translateX(100%); /* Initial position, off-screen to the right */
+    }
+    100% {
+      transform: translateX(-100%); /* Final position, off-screen to the left */
+    }
+  }
+  
+  /* Style for individual images */
+  .slide-container img {
+    width: 100px; /* Adjust the width as needed */
+    margin-right: 100px; /* Adjust the margin between images */
+  }
+  
+  
+
+  /* ---------------------------- END ------------------------- */
+
+
+
+
+
+/* ----------- Cards Styling -------------------- */
+
+
+/* Global.css */
+
+.custom-card {
+    height: 100%;
+    /* height: 200px; */
+    background-color: #696969;
+    color: white;
+  }
+  
+  .custom-card .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    /* height: 300px; */
+  }
+      
+
+
+
+/* --------------------- END ----------------------- */
+
+
+
+/* ------------ CONTACT SECTION MESSAGE ----------------- */
+
+.contact-section {
+    opacity: 0; /* Initially hidden */
+    transition: opacity 7s ease-in-out; /* Adjust the duration (1s) and timing function (ease-in-out) */
+  }
+  
+  .contact-section.fade-in {
+    opacity: 1; /* Visible when the `fade-in` class is added */
+  }
+
+
+
+/* --------------- END --------------------------------- */
+
+
+
+
+/* ------------ CONTACT  MESSAGE BUTTON ----------------- */
+
+.contact-message-button{
+    margin-top: 50px;
+    padding: 5px;
+    border-radius: 15px;
+    width: 150px;
+}
+
+
+.contact-message-button:hover{
+    background-color: #282c34;
+    color: white;
+}
+
+
+
+
+
+
+/* --------------- END --------------------------------- */
+
+
+
+/* ------------ CONTACT ICON ----------------- */
+
+.contact-icon:hover{
+    cursor: pointer;
+}
+
+
+
+/* Add this to your CSS file or style tag */
+.contact-icon {
+    animation: bounce 0.5s infinite alternate;
+  }
+  
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-5px);
+    }
+  }
+  
+
+
+/* --------------- END --------------------------------- */
+
+
+
